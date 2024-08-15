@@ -45,7 +45,3 @@ export function isImageUrl(url: string): boolean {
 export function isVideoUrl(url: string): boolean {
   return VIDEO_REGEXP.test(url);
 }
-
-const url = "dsadsds.mp4";
-
-console.log(isVideoUrl(url));
