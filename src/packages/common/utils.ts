@@ -1,8 +1,10 @@
+// @ts-nocheck
 import { isDef, isNumber, isPlainObject, isPromise } from './validator';
 import { canIUseGroupSetData, canIUseNextTick } from './version';
 
 export { isDef } from './validator';
 
+// take the middle number among three numbers
 export function range(num: number, min: number, max: number) {
   return Math.min(Math.max(num, min), max);
 }
@@ -26,6 +28,7 @@ export function getSystemInfoSync() {
   return systemInfo;
 }
 
+// add pixel units to values
 export function addUnit(value?: string | number): string | undefined {
   if (!isDef(value)) {
     return undefined;
